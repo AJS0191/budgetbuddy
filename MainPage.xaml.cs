@@ -9,17 +9,22 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private void OnLoginClicked(object sender, EventArgs e)
 	{
 		count++;
 		int test = 3;
 
 		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time {test}";
+			LoginButton.Text = $"Clicked {count} time {test}";
 		else
-			CounterBtn.Text = $"Clicked {count} times";
+			LoginButton.Text = $"Clicked {count} times";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		SemanticScreenReader.Announce(LoginButton.Text);
 	}
+
+	private void OnSignUpClicked(object sender, EventArgs e) 
+	{
+		count++;
+    }
 }
 

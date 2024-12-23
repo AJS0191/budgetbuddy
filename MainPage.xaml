@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="budgetbuddy.MainPage">
+             x:Class="budgetbuddy.MainPage"
+             BackgroundColor="#0057D9">
 
     <ScrollView>
         <VerticalStackLayout
@@ -9,31 +10,43 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <Image Source="free_t_rex.jpeg"
+               WidthRequest="375"
+               HeightRequest="375"
+               Aspect="AspectFill">
+                <Image.Clip>
+                    <EllipseGeometry Center="187.5,187.5" RadiusX="187.5" RadiusY="187.5" />
+                </Image.Clip>
+            </Image>
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
+                x:Name="LoginButton"
+                Text="Log in"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                Clicked="OnLoginClicked"
+                HorizontalOptions="Center"
+                CornerRadius="8"
+                BackgroundColor="#FFFFFF"
+                TextColor="#9F4819"
+                MinimumWidthRequest="275"
+                MinimumHeightRequest="75"
+                Margin="0, 100, 0, 0"
+                FontSize="20"
+                FontAttributes="Bold"/>
+
+            <Button
+                x:Name="SignUpButton"
+                Text="Sign Up"
+                SemanticProperties.Hint = "Creates sign up page"
+                Clicked="OnSignUpClicked"
+                HorizontalOptions="Center"
+                CornerRadius="8"
+                BackgroundColor="#EDF24F"
+                TextColor="#9F4819"
+                MinimumWidthRequest="275"
+                MinimumHeightRequest="75"
+                FontSize="20"
+                FontAttributes="Bold"/>
 
         </VerticalStackLayout>
     </ScrollView>

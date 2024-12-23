@@ -40,5 +40,8 @@
     <Color x:Key="Blue100Accent">#3E8EED</Color>
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
+    <Color x:Key="SignUpYellow">#EDF24F</Color>
+    <Color x:Key="FontBurntOrange">#9F4819</Color>
+    <Color x:Key="BackgroundBlue">#0057D9</Color>
 
 </ResourceDictionary>
